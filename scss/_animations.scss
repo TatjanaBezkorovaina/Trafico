@@ -1,0 +1,214 @@
+// Baner
+
+// Title
+.c-banner__title._active {
+  animation-name: pop-up-header;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pop-up-header {
+  0% {
+    color: $c-white;
+    opacity: 0;
+    transform: translate(0px, 80%);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+// People
+.c-banner__people-courier._active {
+  animation-name: to-meet-client;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes to-meet-client {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(70px);
+    opacity: 1;
+  }
+}
+
+.c-banner__people-woman._active {
+  animation-name: to-meet-curier;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes to-meet-curier {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-70px);
+    opacity: 1;
+  }
+}
+// Section About us
+.c-about-us__note._active {
+  animation-name: note-up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate(0px, 30%);
+  opacity: 0;
+}
+
+@keyframes note-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// Section Apply
+
+.chat-white {
+  animation-name: go-top-bottom;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes go-top-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.chat-pink {
+  animation-name: go-bottom-top;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes go-bottom-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+// Section FAQ
+.c-accordion._active {
+  animation-name: accordion-up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate(0px, 30%);
+  opacity: 0;
+}
+
+@keyframes accordion-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.chat_question {
+  animation-name: appearance;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: center center;
+}
+
+@keyframes appearance {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.question {
+  animation-name: visible-question-mark;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes visible-question-mark {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+// Section Reviews Swiper
+.swiper._active {
+  animation-name: swiper-up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate(0px, 30%);
+  opacity: 0;
+}
+
+@keyframes swiper-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// Footer form
+.c-footer__form._active {
+  animation-name: pop-up-form;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate(0px, 30%);
+  opacity: 0;
+}
+@keyframes pop-up-form {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,62 @@
+.c-banner {
+  &__wrapper {
+    max-width: 1285px;
+    padding-top: 7%;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+
+  &__content {
+    max-width: 741px;
+    margin-left: 15%;
+    @media (max-width: $sm) {
+      margin-left: 1%;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    &-image {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $f-dmSerifDisplay;
+    font-weight: normal;
+    margin-bottom: 60px;
+    line-height: 100%;
+    font-size: 100px;
+    cursor: default;
+    @media (max-width: $md) {
+      font-size: 70px;
+      padding-top: 24%;
+      text-align: center;
+    }
+  }
+
+  &__people {
+    display: flex;
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 58%;
+    height: auto;
+
+    &-courier {
+      margin-right: 130px;
+    }
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__car {
+    width: 75%;
+    max-width: 572px;
+    margin-top: 14%;
+  }
+}

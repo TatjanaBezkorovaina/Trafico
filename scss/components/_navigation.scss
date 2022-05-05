@@ -1,0 +1,22 @@
+.c-navigation {
+  max-width: 604px;
+  width: 100%;
+  @media (max-width: $md) {
+    display: none;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    @media (max-width: $lg) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

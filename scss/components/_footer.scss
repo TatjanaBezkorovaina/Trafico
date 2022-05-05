@@ -1,0 +1,111 @@
+.c-footer {
+  &__background {
+    position: absolute;
+    max-width: 1400px;
+    margin-left: 0;
+    margin-top: 11%;
+    z-index: -1;
+    @media (max-width: $lg) {
+      display: none;
+    }
+
+    &-image {
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__wrapper {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  &__truck {
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__social {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 92px;
+    margin-top: 52px;
+    max-width: 1400px;
+    display: flex;
+    width: 100%;
+
+    &-icons {
+      justify-content: space-between;
+      max-width: 170px;
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__bottom-part {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    display: flex;
+    @media (max-width: $lg) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__note {
+    border-left: 10px solid $c-pink;
+    background-color: transparent;
+    padding: 20px 61px;
+    width: 100%;
+    max-width: 475px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__form {
+    opacity: 0;
+    background-color: $c-white;
+    box-shadow: $bs-normal;
+    border-radius: 5px;
+    max-width: 550px;
+    padding: 75px;
+    width: 100%;
+    height: auto;
+
+    &-item {
+      margin-bottom: 20px;
+    }
+
+    &-label {
+      margin-bottom: 10px;
+      font-size: 18px;
+      display: block;
+    }
+
+    &-input {
+      outline-color: $c-pink;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 0px 20px;
+      font-size: 18px;
+      height: 60px;
+      width: 100%;
+    }
+
+    &-input:focus {
+      box-shadow: $bs-normal;
+    }
+  }
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px;
+}
+
+.c-footer__form-input._error {
+  box-shadow: 0 0 15px black;
+}

@@ -1,0 +1,33 @@
+.c-header {
+  font-family: $f-rubik;
+  letter-spacing: 0.05em;
+  position: absolute;
+  font-weight: 700;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  &__wrapper {
+    justify-content: space-between;
+    max-width: 1108px;
+    padding-top: 42px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    @media (max-width: $xl) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  &__logo {
+    display: block;
+    position: relative;
+  }
+}
+
+.trafico {
+  margin-top: 5%;
+}

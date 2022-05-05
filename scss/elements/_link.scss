@@ -1,0 +1,14 @@
+.e-link {
+  text-decoration: none;
+  transition: $t-normal;
+  color: $c-white;
+  line-height: 1;
+
+  &:hover {
+    color: $c-brown;
+  }
+
+  &:active {
+    color: $c-black;
+  }
+}

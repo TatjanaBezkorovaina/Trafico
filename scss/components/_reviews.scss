@@ -1,0 +1,44 @@
+.c-reviews {
+  margin-top: 20%;
+  @media (max-width: $xl) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  // @media (max-width: $lg) {
+  //   display: none;
+  // }
+
+  &__wrapper {
+    justify-content: flex-end;
+    display: flex;
+    @media (max-width: $xl) {
+      display: block;
+      align-content: flex-end;
+    }
+  }
+
+  &__text {
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+    padding-left: 4%;
+    max-width: 380px;
+    display: flex;
+    height: 454px;
+  }
+
+  &__title {
+    font-family: $f-rubik;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+    color: $c-pink;
+  }
+
+  &__subtitle {
+    font-family: $f-dmSerifDisplay;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+  }
+}

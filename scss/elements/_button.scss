@@ -1,0 +1,33 @@
+.e-button {
+  background-color: $c-pink;
+  letter-spacing: 0.05em;
+  font-family: $f-rubik;
+  transition: $t-normal;
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  color: $c-white;
+  padding: 20px;
+  outline: none;
+  border: none;
+
+  &:hover {
+    text-shadow: $c-white 0 0 15px;
+  }
+}
+
+.sw-button {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  height: 40px;
+  border: none;
+  width: 40px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
