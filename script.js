@@ -216,3 +216,15 @@ toggleButton.addEventListener("click", function () {
 navList.addEventListener("click", function () {
   navBar.classList.remove("toggle");
 });
+
+// send form
+function sendUserInfo(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  }).then(openSuccessModal);
+}
