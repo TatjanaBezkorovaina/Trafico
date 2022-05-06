@@ -886,36 +886,7 @@
             d="M474.479 238.052C474.479 227.006 465.524 218.052 454.479 218.052H378.999C367.954 218.052 358.999 227.006 358.999 238.052V248.454C358.999 259.5 367.954 268.454 378.999 268.454H474.479V238.052Z"
             fill="#F4A984"
           />
-          <!-- <circle
-            class="chat-white"
-            r="3.82804"
-            transform="matrix(-1 0 0 1 448.32 243.572)"
-            fill="#F4A984"
-          /> -->
-          <!-- <circle
-              class="chat-white"
-              r="3.82804"
-              transform="matrix(-1 0 0 1 432.369 243.572)"
-              fill="#F4A984"
-            />
-            <circle
-              class="chat-white"
-              r="3.82804"
-              transform="matrix(-1 0 0 1 416.419 243.572)"
-              fill="#F4A984"
-            />
-            <circle
-              class="chat-white"
-              r="3.82804"
-              transform="matrix(-1 0 0 1 400.469 243.572)"
-              fill="#F4A984"
-            />
-            <circle
-              class="chat-white"
-              r="3.82804"
-              transform="matrix(-1 0 0 1 384.519 243.572)"
-              fill="#F4A984"
-            /> -->
+
           <path
             d="M325 405.552C281.4 405.552 303.5 342.552 320 311.051C328.833 304.385 350.5 290.952 366.5 290.552C382.5 290.152 392.5 310.052 395.5 320.052C393.667 320.218 391.8 327.852 399 357.052C406.2 386.252 402.667 401.552 400 405.552H325Z"
             fill="#402B2B"
@@ -1853,7 +1824,7 @@
           <div class="c-footer__note">
             We provide traffic management consultants so you get started quickly, contact us for a quote today!
           </div>
-          <div class="c-footer__form _anim-items _anim-no-hide">
+          <div class="c-footer__form _anim-items _anim-no-hide" id="modal-form">
             <form action="#" id="form" class="c-footer__form-body" netlify>
               <div class="c-footer__form-item">
                 <label for="forName" class="c-footer__form-label">Name</label>
@@ -1861,12 +1832,42 @@
               </div>
               <div class="c-footer__form-item">
                 <label for="forEmail" class="c-footer__form-label">Email address</label>
-                <input id="forEmail" type="text" name="name" required="required" class="c-footer__form-input _req _email" />
+                <input id="forEmail" type="email" name="Email" required="required" class="c-footer__form-input _req _email" />
               </div>
               <div c-footer__form-button>
-                <button type="submit" class="e-button">GET STARTED <span>&rightarrow;</span></button>
+                <button type="submit" class="e-button modal-form-submit" id="modal-form-submit">
+                  GET STARTED <span>&rightarrow;</span>
+                </button>
               </div>
             </form>
+          </div>
+          <div class="modal-container" id="modal-success">
+            <div class="modal-success">
+              <button class="close-icon" id="modal-success-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" />
+                </svg>
+              </button>
+              <h4 class="modal-success-title">Your message has been sent!</h4>
+              <p class="modal-success-text">Our manager will contact you soon.</p>
+              <div class="modal-success-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <g>
+                    <rect fill="none" height="24" width="24" x="0" />
+                    <path
+                      d="M12,19c0-3.87,3.13-7,7-7c1.08,0,2.09,0.25,3,0.68V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h8.08 C12.03,19.67,12,19.34,12,19z M4,6l8,5l8-5v2l-8,5L4,8V6z M17.34,22l-3.54-3.54l1.41-1.41l2.12,2.12l4.24-4.24L23,16.34L17.34,22z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div class="c-footer__map" id="map"></div>
