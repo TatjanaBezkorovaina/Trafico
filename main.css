@@ -104,7 +104,7 @@
   box-shadow: 0px 10px 20px #fce1e0;
   border-radius: 5px;
   max-width: 550px;
-  padding: 75px;
+  padding: calc(9px + 4.5833333333vw);
   width: 100%;
   height: auto;
 }
@@ -131,6 +131,7 @@
 
 /* Set the size of the div element that contains the map */
 #map {
+  z-index: 1;
   height: 300px;
 }
 
@@ -149,22 +150,25 @@
 }
 
 .modal-success {
-  padding: 80px 40px 88px 40px;
+  padding: 49px;
   background-color: #fcddd4;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
+  max-width: 550px;
+  width: 100%;
+  border-radius: 49%;
 }
 
 .modal-container {
+  z-index: 11;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--theme-modal-bgd);
+  background-color: #0f264c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,20 +178,19 @@
 }
 
 .modal-success-title {
-  font-size: 16px;
+  font-size: calc(14px + 0.75vw);
   line-height: 24px;
   color: #402b2b;
   text-align: center;
-  margin-bottom: 35px;
-  width: 740px;
+  margin-bottom: calc(25px + 0.4166666667vw);
 }
 
 .modal-success-text {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: #402b2b;
-  margin-bottom: 36px;
+  margin-bottom: calc(25px + 0.4166666667vw);
 }
 
 .modal-active {
@@ -609,10 +612,11 @@
   transition: 0.3s;
   left: 0;
   box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
-  z-index: 101;
+  z-index: 1;
 }
 
 .toggle-menu {
+  z-index: 1;
   background-color: #f5cdcb;
   position: fixed;
   border-radius: 5px;

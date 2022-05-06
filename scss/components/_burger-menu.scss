@@ -19,10 +19,11 @@
   transition: 0.3s;
   left: 0;
   box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
-  z-index: 101;
+  z-index: 1;
 }
 
 .toggle-menu {
+  z-index: 1;
   background-color: #f5cdcb;
   position: fixed;
   border-radius: 5px;
