@@ -121,11 +121,29 @@ if (accordions) {
 // Swiper
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 2.5,
+  slidesPerView: 3,
   spaceBetween: 20,
-  centeredSlides: false,
+  // centeredSlides: false,
   simulateTouch: true,
   loop: true,
+
+  breakpoints: {
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+  },
 });
 
 const swiperPrevBtn = document.getElementById("js-swiper-prev");

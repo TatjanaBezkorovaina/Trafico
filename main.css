@@ -14,7 +14,7 @@
 .c-header__wrapper {
   justify-content: space-between;
   max-width: 1108px;
-  padding-top: 42px;
+  padding-top: calc(5px + 2.0833333333vw);
   flex-wrap: nowrap;
   margin: 0 auto;
   display: flex;
@@ -89,14 +89,15 @@
 }
 .c-footer__note {
   border-left: 10px solid #ee4d47;
-  background-color: transparent;
-  padding: 20px 61px;
+  background-color: #fcddd4;
+  padding: 25px;
   width: 100%;
   max-width: 475px;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  margin-right: 45px;
 }
 .c-footer__form {
   opacity: 0;
@@ -168,7 +169,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #0f264c;
+  background-color: #113f8a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,13 +234,8 @@
   width: 100%;
 }
 .c-banner__content {
-  max-width: 741px;
-  margin-left: 15%;
-}
-@media (max-width: 576px) {
-  .c-banner__content {
-    margin-left: 1%;
-  }
+  max-width: 680px;
+  margin-left: calc(25px + 2.9166666667vw);
 }
 .c-banner__background {
   position: absolute;
@@ -251,17 +247,16 @@
   width: 100%;
 }
 .c-banner__title {
+  font-size: calc(35px + 2.9166666667vw);
   font-family: "DM Serif Display", serif;
   font-weight: normal;
   margin-bottom: 60px;
   line-height: 100%;
-  font-size: 100px;
+  padding-top: calc(25px + 2.0833333333vw);
   cursor: default;
 }
 @media (max-width: 768px) {
   .c-banner__title {
-    font-size: 70px;
-    padding-top: 24%;
     text-align: center;
   }
 }
@@ -283,18 +278,23 @@
 .c-banner__car {
   width: 75%;
   max-width: 572px;
-  margin-top: 14%;
+  margin-top: calc(25px + 2.0833333333vw);
+}
+@media (max-width: 576px) {
+  .c-banner__car {
+    display: none;
+  }
 }
 
 .c-about-us {
-  margin-top: 10%;
+  margin-top: calc(30px + 2.0833333333vw);
 }
 .c-about-us__wrapper {
   font-family: "Rubik", sans-serif;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  height: 550px;
+  height: 400px;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -319,7 +319,7 @@
 .c-about-us__title {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding-top: 15%;
+  padding-top: calc(10px + 1.25vw);
   padding-left: 4%;
   font-weight: bold;
   line-height: 40px;
@@ -339,16 +339,16 @@
   border-left: 10px solid #ee4d47;
   margin-left: 4%;
   border-radius: 5px;
-  padding: 30px 50px;
+  padding: 40px;
   font-weight: 500;
   line-height: 33px;
   color: #402b2b;
-  font-size: 24px;
+  font-size: calc(14px + 0.8333333333vw);
   opacity: 0;
 }
 
 .c-apply {
-  margin-top: 12%;
+  margin-top: calc(10px + 1.25vw);
   padding: 10px;
 }
 .c-apply__wrapper {
@@ -381,7 +381,7 @@
   font-weight: bold;
   line-height: 40px;
   font-size: 24px;
-  margin-top: 90px;
+  margin-top: 120px;
   color: #ee4d47;
 }
 .c-apply__subtitle {
@@ -488,8 +488,8 @@
   max-width: 550px;
 }
 .c-faq__topPart-title {
-  padding-top: 23%;
-  padding-bottom: 10%;
+  padding-top: calc(20px + 1.25vw);
+  padding-bottom: calc(10px + 1.25vw);
   padding-left: 14%;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
@@ -501,9 +501,9 @@
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 48px;
-  line-height: 67px;
-  padding-left: 9%;
+  font-size: calc(25px + 2.0833333333vw);
+  line-height: calc(30px + 3.3333333333vw);
+  padding-left: calc(15px + 0.8333333333vw);
 }
 @media (max-width: 768px) {
   .c-faq__topPart-img {
@@ -517,6 +517,7 @@
 }
 
 .swiper {
+  right: 0;
   opacity: 0;
   overflow: hidden;
   max-width: 1300px;
@@ -525,9 +526,12 @@
 }
 .swiper-wrapper {
   max-height: 360px;
+  max-width: 960px;
   width: 100%;
 }
 .swiper-slide {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   box-shadow: 0px 10px 20px #fce1e0;
   align-items: flex-end;
@@ -550,7 +554,11 @@
 }
 
 .c-reviews {
-  margin-top: 20%;
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: calc(20px + 5.4166666667vw);
 }
 @media (max-width: 1200px) {
   .c-reviews {
@@ -559,7 +567,8 @@
   }
 }
 .c-reviews__wrapper {
-  justify-content: flex-end;
+  max-width: 1300px;
+  width: 100%;
   display: flex;
 }
 @media (max-width: 1200px) {
@@ -572,10 +581,10 @@
   justify-content: space-around;
   align-content: space-around;
   flex-direction: column;
-  padding-left: 4%;
+  padding-left: calc(15px + 2.0833333333vw);
   max-width: 380px;
   display: flex;
-  height: 454px;
+  height: 360px;
 }
 .c-reviews__title {
   font-family: "Rubik", sans-serif;

@@ -11,7 +11,8 @@
   &__wrapper {
     justify-content: space-between;
     max-width: 1108px;
-    padding-top: 42px;
+    padding-top: calc(5px + 25 * (100vw / 1200));
+    // padding-top: 42px;
     flex-wrap: nowrap;
     margin: 0 auto;
     display: flex;

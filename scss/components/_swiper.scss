@@ -4,6 +4,9 @@
 }
 
 .swiper {
+  // margin-left: 298px;
+  // margin-left: calc(290px + 8 * (100vw / 1300));
+  right: 0;
   opacity: 0;
   overflow: hidden;
   max-width: 1300px;
@@ -12,10 +15,14 @@
 
   &-wrapper {
     max-height: 360px;
+    max-width: 960px;
+
     width: 100%;
   }
 
   &-slide {
+    display: flex;
+    flex-direction: column;
     background-color: $c-white;
     box-shadow: $bs-normal;
     align-items: flex-end;

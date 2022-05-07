@@ -1,5 +1,10 @@
 .c-reviews {
-  margin-top: 20%;
+  // margin-right: 0px;
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: calc(20px + 65 * (100vw / 1200));
   @media (max-width: $xl) {
     display: flex;
     justify-content: flex-end;
@@ -9,8 +14,12 @@
   // }
 
   &__wrapper {
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    max-width: 1300px;
+    width: 100%;
     display: flex;
+    // align-content: flex-end;
+
     @media (max-width: $xl) {
       display: block;
       align-content: flex-end;
@@ -21,10 +30,10 @@
     justify-content: space-around;
     align-content: space-around;
     flex-direction: column;
-    padding-left: 4%;
+    padding-left: calc(15px + 25 * (100vw / 1200));
     max-width: 380px;
     display: flex;
-    height: 454px;
+    height: 360px;
   }
 
   &__title {

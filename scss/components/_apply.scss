@@ -1,5 +1,5 @@
 .c-apply {
-  margin-top: 12%;
+  margin-top: calc(10px + 15 * (100vw / 1200));
   padding: 10px;
   &__wrapper {
     font-family: $f-rubik;
@@ -27,7 +27,7 @@
     font-weight: bold;
     line-height: 40px;
     font-size: 24px;
-    margin-top: 90px;
+    margin-top: 120px;
     color: $c-pink;
   }
 

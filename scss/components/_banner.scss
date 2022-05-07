@@ -8,11 +8,13 @@
   }
 
   &__content {
-    max-width: 741px;
-    margin-left: 15%;
-    @media (max-width: $sm) {
-      margin-left: 1%;
-    }
+    // width: 100%;
+    max-width: 680px;
+    margin-left: calc(25px + 35 * (100vw / 1200));
+    // margin-left: 15%;
+    // @media (max-width: $sm) {
+    //   margin-left: 1%;
+    // }
   }
 
   &__background {
@@ -26,15 +28,17 @@
   }
 
   &__title {
+    font-size: calc(35px + 35 * (100vw / 1200));
     font-family: $f-dmSerifDisplay;
     font-weight: normal;
     margin-bottom: 60px;
     line-height: 100%;
-    font-size: 100px;
+    padding-top: calc(25px + 25 * (100vw / 1200));
+    // font-size: 100px;
     cursor: default;
     @media (max-width: $md) {
-      font-size: 70px;
-      padding-top: 24%;
+      // font-size: 70px;
+      // padding-top: 24%;
       text-align: center;
     }
   }
@@ -57,6 +61,9 @@
   &__car {
     width: 75%;
     max-width: 572px;
-    margin-top: 14%;
+    margin-top: calc(25px + 25 * (100vw / 1200));
+    @media (max-width: $sm) {
+      display: none;
+    }
   }
 }

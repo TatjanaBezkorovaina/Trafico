@@ -1,12 +1,12 @@
 .c-about-us {
-  margin-top: 10%;
+  margin-top: calc(30px + 25 * (100vw / 1200));
 
   &__wrapper {
     font-family: $f-rubik;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    height: 550px;
+    height: 400px;
     width: 100%;
     @media (max-width: $md) {
       display: block;
@@ -30,7 +30,7 @@
   &__title {
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding-top: 15%;
+    padding-top: calc(10px + 15 * (100vw / 1200));
     padding-left: 4%;
     font-weight: bold;
     line-height: 40px;
@@ -52,11 +52,11 @@
     border-left: 10px solid $c-pink;
     margin-left: 4%;
     border-radius: 5px;
-    padding: 30px 50px;
+    padding: 40px;
     font-weight: 500;
     line-height: 33px;
     color: $c-brown;
-    font-size: 24px;
+    font-size: calc(14px + 10 * (100vw / 1200));
     opacity: 0;
   }
 }
